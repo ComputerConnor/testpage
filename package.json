@@ -1,0 +1,19 @@
+{
+  "name": "testpage",
+  "version": "8.1.0",
+  "description": "test page for game website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComputerConnor/testpage.git"
+  },
+  "author": "ComputerConnor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComputerConnor/testpage/issues"
+  },
+  "homepage": "https://github.com/ComputerConnor/testpage#readme"
+}
