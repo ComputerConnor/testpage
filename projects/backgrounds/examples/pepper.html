@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>peppers ghost</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="../../../css/particles.css">
+		<link rel="stylesheet" href="../../../css/style.css">
+		<link rel="stylesheet" href="../../../css/blogDexStyle.css">
+		<script src="https://kit.fontawesome.com/f4c5c3ffd2.js"></script>
+	</head>
+	<body>
+		<body>
+			<div id="particles-js"></div>
+			<div class="wrapper">
+			   <div class="sidebar">
+				  <h2>Games</h2>
+				  <ul>
+					 <a href="#">
+						<li><i class="fa-solid fa-up-long"></i> Top</li>
+					 </a>
+					 <a href="https://computerconnor.netlify.app">
+						<li><i class="fas fa-home"></i>Home</li>
+					 <a href="https://computerconnor.netlify.app/sidebar/contact-page/index.html">
+						<li><i class="fa-solid fa-bug"></i> Report/Request</li>
+					 </a>
+					 <a href="https://dashboard.formspark.io/workspaces/D5esdD55/forms/6OHUYks8/submissions">
+						<li><i class="fa-solid fa-lock"></i> Requests</li>
+					 </a>
+					 <!--<div class=left-col>
+						<img src="img/icon.png" width="199px">
+					 </div>-->
+				  </ul>
+			 <script src="../../../js/index.js"></script>
+			 <script type="text/javascript">
+			 window.addEventListener("load", function(){
+					 setTimeout(
+					 function open(event){
+							 document.querySelector(".popup").style.display = "block";
+					 },
+					 2000 
+					 )
+			 });
+		 document.querySelector("#close").addEventListener("click", function(){
+			 document.querySelector(".popup").style.display = "none";
+		 });
+			 </script>
+			   </div>
+			   <div class="main_content">
+				  <div class="alert">
+					 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+					 Being Sick Sucks
+				  </div>
+				  <div class="info">
+					 <header>
+						<h1>
+						   <div class="title">
+							  Pick Your Game
+						   </div>
+						</h1>
+						<!-- <div class=right-col>
+						   <img src="https://i.ibb.co/DCvv9Gz/play-button.png" id="icon">
+						</div>
+						<audio id="mySong">
+						   <source src="https://codehs.com/uploads/878bb3c793193718a2c071f08521161b" type="audio/ogg">
+						</audio>
+						<script>
+						   var mySong = document.getElementById("mySong");
+						   var icon = document.getElementById("icon");
+						   icon.onclick = function () {
+							  if (mySong.paused) {
+								 mySong.play();
+								 icon.src = "https://i.ibb.co/2kbtwrG/pause.png"
+							  } else {
+								 mySong.pause();
+								 icon.src = "https://i.ibb.co/DCvv9Gz/play-button.png"
+							  }
+						   }
+						</script> -->
+					 </header>
+					 <br>
+				  </div>
+				  <ul id="navbar">
+					 <div class="search-bar" style="margin-top: -25px">
+						<input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()"
+						   placeholder="Search">
+						<br>
+					 </div>
+					 <li class="nav"><a href="index.html">All</a></li>
+					  <li class="nav"><a href="flash.html">Flash</a></li>
+					 <li class="nav"><a href="gba.html">GBA</a></li> 
+				  </ul>
+				  <div class="bodyMain">
+					 <div>
+						<div class="main">
+						   <!-- Portfolio Gallery Grid -->
+						   <div class="row">
+							  <div name="2048" class="column gameDiv all">
+								 <a class="blogLink" href="https://computerconnor-dngaa.netlify.app/games/2048/">
+									<div class="content">
+									   <img src="img/2048.png" alt="2048" style="width:100%">
+									   <h4>2048</h4>
+									</div>
+								 </a>
+							  </div>
+							  <!-- END GRID -->
+						   </div>
+						   <!-- END MAIN -->
+						</div>
+						<div id="progress">
+						   <span id="progress-value"></span>
+						</div>
+					 </div>
+					 <!--<script type="text/javascript" src="../../../particles.js"></script>-->
+					 <!--<script type="text/javascript" src="../../../app.js"></script>-->
+					 <script>
+						filterSelection("all")
+						function filterSelection(c) {
+						   var x, i;
+						   x = document.getElementsByClassName("column");
+						   if (c == "all") c = "";
+						   for (i = 0; i < x.length; i++) {
+							  w3RemoveClass(x[i], "show");
+							  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+						   }
+						}
+		 
+						function w3AddClass(element, name) {
+						   var i, arr1, arr2;
+						   arr1 = element.className.split(" ");
+						   arr2 = name.split(" ");
+						   for (i = 0; i < arr2.length; i++) {
+							  if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+						   }
+						}
+		 
+						function w3RemoveClass(element, name) {
+						   var i, arr1, arr2;
+						   arr1 = element.className.split(" ");
+						   arr2 = name.split(" ");
+						   for (i = 0; i < arr2.length; i++) {
+							  while (arr1.indexOf(arr2[i]) > -1) {
+								 arr1.splice(arr1.indexOf(arr2[i]), 1);
+							  }
+						   }
+						   element.className = arr1.join(" ");
+						}
+		 
+		 
+						var selectedTopic = "all"
+		 
+						function searchFunction() {
+						   console.log("run")
+						   var input, filter, ul, li, a, i;
+						   input = document.getElementById('myinput');
+						   filter = input.value.toUpperCase();
+						   ul = document.getElementById('wrapper');
+						   li = document.getElementsByClassName('gameDiv');
+						   var buttons = document.getElementsByClassName('selectable');
+						   console.log(li)
+						   for (i = 0; i < li.length; i++) {
+							  a = li[i].getAttribute("name");
+							  console.log(a)
+							  if (a.toUpperCase().indexOf(filter) > -1) {
+								 if (li[i].classList.contains(selectedTopic)) {
+									li[i].style.display = "";
+								 }
+								 else {
+									li[i].style.display = 'none';
+								 }
+							  }
+		 
+							  else {
+								 li[i].style.display = 'none';
+							  }
+						   }
+						}
+		 
+						function switchGame(x) {
+						   selectedTopic = x
+						   var buttons = document.getElementsByClassName('selectable');
+						   var games = document.getElementsByClassName('gameDiv');
+						   for (i = 0; i < buttons.length; i++) {
+							  a = buttons[i].getAttribute("name");
+							  if (selectedTopic == a) {
+								 buttons[i].classList.add('selectedButton');
+								 buttons[i].classList.remove('selectButton');
+							  }
+							  else {
+								 buttons[i].classList.remove('selectedButton');
+								 buttons[i].classList.add('selectButton');
+							  }
+		 
+						   }
+						   for (i = 0; i < games.length; i++) {
+							  if (games[i].classList.contains(selectedTopic)) {
+								 games[i].style.display = "";
+							  }
+							  else {
+								 games[i].style.display = 'none';
+							  }
+						   }
+						}
+		 
+						let scrollPrecentage = () => {
+						   let scrollProgress = document.getElementById("progress");
+						   let progressValue = document.getElementById("progress-value");
+						   let pos = document.documentElement.scrollTop;
+						   let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+						   let scrollValue = Math.round(pos * 100 / calcHeight);
+						   scrollProgress.style.background = `conic-gradient(#00A27E ${scrollValue}%, #3D3D3D     ${scrollValue}%)`;
+						}
+						window.onscroll = scrollPrecentage;
+						window.onload = scrollPrecentage;
+					 </script>
+		 <!--      <div>
+				  <a href="https://www.github.com/ComputerConnor" class="link">Connor Jordan</a>
+			   </div>
+			   <p>🤓 ADHD Central 🤓</p>-->
+			<!--<span>Copyright © 2019-2022 • All Rights Reserved</span>-->
+
+		<!--<div id="info">
+			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - <a href="https://en.wikipedia.org/wiki/Pepper%27s_ghost">peppers ghost effect</a> demo <br />
+			<a href="http://www.instructables.com/id/Reflective-Prism/?ALLSTEPS" target="_blank" rel="noopener">how to build the reflective prism</a>
+		</div>-->
+
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js"
+				}
+			}
+		</script>
+
+		<script type="module">
+
+			import * as THREE from 'three';
+
+			import { PeppersGhostEffect } from './jsm/effects/PeppersGhostEffect.js';
+
+			let container;
+
+			let camera, scene, renderer, effect;
+			let group;
+
+			init();
+			animate();
+
+			function init() {
+
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 100000 );
+
+				scene = new THREE.Scene();
+
+				group = new THREE.Group();
+				scene.add( group );
+
+				// Cube
+
+				const geometry = new THREE.BoxGeometry().toNonIndexed(); // ensure unique vertices for each triangle
+
+				const position = geometry.attributes.position;
+				const colors = [];
+				const color = new THREE.Color();
+
+				// generate for each side of the cube a different color
+
+				for ( let i = 0; i < position.count; i += 6 ) {
+
+					color.setHex( Math.random() * 0xffffff );
+
+					// first face
+
+					colors.push( color.r, color.g, color.b );
+					colors.push( color.r, color.g, color.b );
+					colors.push( color.r, color.g, color.b );
+
+					// second face
+
+					colors.push( color.r, color.g, color.b );
+					colors.push( color.r, color.g, color.b );
+					colors.push( color.r, color.g, color.b );
+
+				}
+
+				geometry.setAttribute( 'color', new THREE.Float32BufferAttribute( colors, 3 ) );
+
+				const material = new THREE.MeshBasicMaterial( { vertexColors: true } );
+
+				for ( let i = 0; i < 10; i ++ ) {
+
+					const cube = new THREE.Mesh( geometry, material );
+					cube.position.x = Math.random() * 2 - 1;
+					cube.position.y = Math.random() * 2 - 1;
+					cube.position.z = Math.random() * 2 - 1;
+					cube.scale.multiplyScalar( Math.random() + 0.5 );
+					group.add( cube );
+
+				}
+
+				renderer = new THREE.WebGLRenderer();
+				renderer.setPixelRatio( window.devicePixelRatio );
+				container.appendChild( renderer.domElement );
+
+				effect = new PeppersGhostEffect( renderer );
+				effect.setSize( window.innerWidth, window.innerHeight );
+				effect.cameraDistance = 5;
+
+				window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				effect.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				group.rotation.y += 0.01;
+
+				effect.render( scene, camera );
+
+			}
+
+		</script>
+	</body>
+</html>
