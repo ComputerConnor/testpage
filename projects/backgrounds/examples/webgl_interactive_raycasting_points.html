@@ -29,7 +29,7 @@
 
 			<!--import Stats from './jsm/libs/stats.module.js';-->
 
-			let renderer, scene, camera, <!--stats-->;
+			let renderer, scene, camera, stats;
 			let pointclouds;
 			let raycaster;
 			let intersection = null;
@@ -215,8 +215,8 @@
 
 				//
 
-				<!--stats = new Stats();-->
-				<!--container.appendChild( stats.dom );-->
+				stats = new Stats();
+				container.appendChild( stats.dom );
 
 				//
 
@@ -246,7 +246,7 @@
 				requestAnimationFrame( animate );
 
 				render();
-				<!--stats.update();-->
+				stats.update();
 
 			}
 
