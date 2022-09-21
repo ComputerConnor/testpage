@@ -309,11 +309,7 @@
 
 			import * as THREE from 'three';
 
-			import Stats from 'three/addons/libs/stats.module.js';
-
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-
-			let camera, scene, renderer, stats, material;
+			let camera, scene, renderer, material;
 			let mouseX = 0, mouseY = 0;
 
 			let windowHalfX = window.innerWidth / 2;
@@ -362,23 +358,6 @@
 
 				//
 
-				stats = new Stats();
-				document.body.appendChild( stats.dom );
-
-				//
-
-				const gui = new GUI();
-
-				gui.add( material, 'sizeAttenuation' ).onChange( function () {
-
-					material.needsUpdate = true;
-
-				} );
-
-				gui.open();
-
-				//
-
 				document.body.style.touchAction = 'none';
 				document.body.addEventListener( 'pointermove', onPointerMove );
 
@@ -416,7 +395,6 @@
 				requestAnimationFrame( animate );
 
 				render();
-				stats.update();
 
 			}
 
