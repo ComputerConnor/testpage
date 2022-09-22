@@ -130,7 +130,7 @@
 				uniforms[ 'texture1' ].value.wrapS = uniforms[ 'texture1' ].value.wrapT = THREE.RepeatWrapping;
 				uniforms[ 'texture2' ].value.wrapS = uniforms[ 'texture2' ].value.wrapT = THREE.RepeatWrapping;
 
-				const size = 0.65;
+				const size = 1;
 
 				const material = new THREE.ShaderMaterial( {
 
@@ -140,7 +140,7 @@
 
 				} );
 
-				mesh = new THREE.Mesh( new THREE.BoxGeometry( size, 0.5, 50, 20 ), material );
+				mesh = new THREE.Mesh( new THREE.SphereGeometry( size, 15, 64, 32 ), material );
 				mesh.rotation.x = 0.3;
 				scene.add( mesh );
 
