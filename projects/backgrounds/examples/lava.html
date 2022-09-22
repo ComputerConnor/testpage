@@ -294,7 +294,7 @@
 		<!-- Put Script Below -->
 
 
-				<script id="fragmentShader" type="x-shader/x-fragment">
+					<script id="fragmentShader" type="x-shader/x-fragment">
 
 			uniform float time;
 
@@ -413,7 +413,7 @@
 				uniforms[ 'texture1' ].value.wrapS = uniforms[ 'texture1' ].value.wrapT = THREE.RepeatWrapping;
 				uniforms[ 'texture2' ].value.wrapS = uniforms[ 'texture2' ].value.wrapT = THREE.RepeatWrapping;
 
-				const size = 0.65;
+				const size = 1;
 
 				const material = new THREE.ShaderMaterial( {
 
@@ -423,7 +423,7 @@
 
 				} );
 
-				mesh = new THREE.Mesh( new THREE.TorusGeometry( size, 0.3, 30, 30 ), material );
+				mesh = new THREE.Mesh( new THREE.SphereGeometry( size, 15, 64, 32 ), material );
 				mesh.rotation.x = 0.3;
 				scene.add( mesh );
 
